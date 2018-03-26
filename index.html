@@ -1,4 +1,17 @@
-<h1>Hey</h1>
-<script type="text/javascript">
-  window.location.replace("mfp://food/diary");
-</script>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        var redirectToApp = function() {
+            setTimeout(function appNotInstalled() {
+                window.location.replace("https://ssebro.github.io/animated-winner/not-installed");
+            }, 100);
+            window.location.replace("mfp://food/diary");
+        };
+        window.onload = redirectToApp;
+    </script>
+</head>
+<body></body>
+</html>
